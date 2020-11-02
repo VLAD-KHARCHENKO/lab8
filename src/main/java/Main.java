@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         Controller controller = new Controller();
+        controller.parameterScanner();
         controller.run();
         controller.sort();
         controller.average();

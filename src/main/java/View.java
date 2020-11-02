@@ -1,6 +1,7 @@
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Scanner;
 
 public class View {
 
@@ -12,6 +13,12 @@ public class View {
                     model.getId(), model.getBrand(), model.getTypes(),
                     model.getColor(), model.getCapacity(), model.getPrice());
         }
+
+    }
+    public String getParameters(){
+        Scanner sc = new Scanner(System.in);
+      String param=sc.nextLine();
+       return param;
 
     }
 
