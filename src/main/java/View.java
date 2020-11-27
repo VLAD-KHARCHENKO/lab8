@@ -7,18 +7,18 @@ public class View {
 
     public void printMet(List<Model> modelList) throws SQLException {
 
-        System.out.printf("|%-5s|%-10s|%-10s|%-10s|%-10s|%-7s|\n", "id:", "Brand:", "Types:", "Color:", "Capacity:", "Price:");
+        System.out.printf("|%-5s|%-10s|%-10s|%-10s|%-7s|\n", ":", "Code_Smartphones :", "Name_Generator :", "Name_Model :", "Diagonal :", "Price :");
         for (Model model : modelList) {
-            System.out.printf("|%-5d|%-10s|%-10s|%-10s|%-10.1f|%-7d|\n",
+            System.out.printf("|%-5d|%-10s|%-10s|%-10.1f|%-7d|\n",
                     model.getId(), model.getBrand(), model.getTypes(),
-                    model.getColor(), model.getCapacity(), model.getPrice());
+                    model.getDiagonal(), model.getPrice());
         }
 
     }
     public String getParameters(){
         Scanner sc = new Scanner(System.in);
-      String param=sc.nextLine();
-       return param;
+        String param=sc.nextLine();
+        return param;
 
     }
 

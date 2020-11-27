@@ -28,7 +28,7 @@ public class Controller {
     }
 
     public void sort() throws SQLException {
-        sortList = modelList.stream().filter(n -> n.getColor().equals("red") && n.getTypes().equals("universal")).collect(Collectors.toList());
+        sortList = modelList.stream().filter(n -> n.getBrand().equals("Apple") && n.getDiagonal() >5 ).collect(Collectors.toList());
         view.viewMessage("");
         view.viewMessage("Red universal car");
         view.printMet(sortList);
@@ -38,10 +38,10 @@ public class Controller {
     public void average() {
         double sum = 0;
         for (Model model : modelList) {
-            sum += model.getCapacity();
+            sum += model.getDiagonal();
         }
         view.viewMessage("");
 
-        view.viewMessage("Average engine capacity: " + (sum / modelList.size()));
+        view.viewMessage("Average Diagonal od Smartphones : " + (sum / modelList.size()));
     }
 }

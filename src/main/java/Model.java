@@ -1,17 +1,17 @@
-public class Model {
-  private  int id;
-   private String brand;
-   private String types;
-  private   String color;
-    private float capacity;
-   private int price;
 
-    public Model(int id, String brand, String types, String color, float capacity, int price) {
+
+public class Model {
+    private  int id;
+    private String brand;
+    private String types;
+    private   float diagonal;
+    private int price;
+
+    public Model(int id, String brand, String types, float diagonal, int price) {
         this.id = id;
         this.brand = brand;
         this.types = types;
-        this.color = color;
-        this.capacity = capacity;
+        this.diagonal = diagonal;
         this.price = price;
     }
 
@@ -39,20 +39,12 @@ public class Model {
         this.types = types;
     }
 
-    public String getColor() {
-        return color;
+    public float getDiagonal() {
+        return diagonal;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public float getCapacity() {
-        return capacity;
-    }
-
-    public void setCapacity(float capacity) {
-        this.capacity = capacity;
+    public void setDiagonal(float diagonal) {
+        this.diagonal = diagonal;
     }
 
     public int getPrice() {

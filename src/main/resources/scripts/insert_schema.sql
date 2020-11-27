@@ -1,13 +1,12 @@
-﻿            use lab8;
+﻿  use labMel;
 
-insert into `car` (`brand`, `types`, `color`, `capacity`, `price`) values
-('Ford', 'sedan', 'red', '1.5', '20000'),
-('Ford', 'universal', 'red', '1.7', '35000'),
-('Ford', 'pickup', 'blue', '1.9', '14000'),
-('BMW', 'hatchback', 'black', '1.9', '40000'),
-('BMW', 'sedan', 'red', '1.8', '54000'),
-('BMW', 'universal', 'red', '2.5', '30000'),
-('Ferrari', 'pickup', 'blue', '1.8', '35000'),
-('Ferrari', 'hatchback', 'white', '1.5', '20000'),
-('Ferrari', 'sedan', 'blue', '2.5', '14000'),
-('Ferrari', 'universal', 'red', '1.7', '20000');
+insert into `Smartphones`(`Name_Generator`,`Name_Model`,`Diagonal`,`Price`) values
+('Apple','Iphone 12 Pro Max','6.7','40000 '),
+('Samsung','Z Fold 2','7.6','50000 '),
+('Honor','P 30 Pro ','6.47','17000 '),
+('Oppo','Reno 4 Pro','6.5','15000'),
+('Fly','2E','5.7','2000 '),
+('Nokia','8 5G','6.81','20000'),
+('Meizu','16','6.0','5300'),
+('Xiaomi','Mi 10T','6.67','12000'),
+('Sony','Xperia 1 II','6.5','34000');

@@ -1,12 +1,12 @@
-drop schema if exists lab8;
-create schema lab8 character set utf8 collate utf8_general_ci;
-use lab8;
+drop schema if exists labMel;
+create schema labMel character set utf8 collate utf8_general_ci;
+use labMel;
 
-create table car (
-id Int auto_increment,
-brand varchar(255) not null,
-types varchar(255) not null,
-color varchar(255) not null,
-capacity float not null,
-price varchar(255) not null,
+create table Smartphones
+(
+id int auto_increment,
+Name_Generator varchar(80) not null,
+Name_Model varchar(80) not null,
+Diagonal float not null,
+Price int not null,
 primary key (id));
